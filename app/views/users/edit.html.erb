@@ -1,0 +1,9 @@
+<h1>Current Name <%= @name%></h1>
+
+<form method="post" action="/process_edit">
+    <input name="authenticity_token" value="<%= form_authenticity_token%>" type="hidden">
+    <p>
+        Change name to: <input type="text" name="name" placeholder="Enter name">
+    </p>
+    <button>Submit</button>
+</form>
